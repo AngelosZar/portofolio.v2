@@ -16,9 +16,9 @@ function App() {
   return (
     <main className="w-full max-w-[1920px] flex flex-col mx-auto flex-grow min-h-screen bg-bodyDark">
       {/* <Layout> */}
-      {/* <Header /> */}
-      <Hero scrollToSection={scrollToSection} />
       <Header />
+      <Hero scrollToSection={scrollToSection} />
+      {/* <Header /> */}
       <AboutMe />
       <Skills />
       <MyProjects />

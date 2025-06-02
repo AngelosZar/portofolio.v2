@@ -18,7 +18,7 @@ function Hero({ scrollToSection }) {
             className="text-green-500 hover:text-green-300 transition-colors duration-300 self-end font-medium "
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection(e, 'header');
+              scrollToSection(e, 'about');
             }}
           >
             See my portfolio →

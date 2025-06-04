@@ -2,7 +2,7 @@ function Skills() {
   return (
     <section
       className="w-full max-w-xl
-     flex flex-col mx-auto flex-grow items-center min-h-screen bg-bodyDark self-center gap-12"
+     flex flex-col mx-auto flex-grow items-center  bg-bodyDark self-center gap-12"
     >
       <h3 className="text-green-500 py-12">Tech stack </h3>
       <div>
@@ -84,6 +84,10 @@ function Skills() {
               src="https://skillicons.dev/icons?i=vercel"
               className="w-16 h-16"
             />
+            {/* <img
+              src="https://skillicons.dev/icons?i=vite"
+              className="w-16 h-16"
+            /> */}
           </div>
         </div>
       </div>

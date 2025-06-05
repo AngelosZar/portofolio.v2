@@ -3,8 +3,10 @@ import {
   FaExternalLinkAlt,
   FaLinkedin,
   FaDiscord,
+  FaArrowUp,
+  FaArrowCircleUp,
 } from 'react-icons/fa';
-import { FaMessage } from 'react-icons/fa6';
+
 function Contact() {
   return (
     <section
@@ -18,21 +20,51 @@ function Contact() {
         </p>
         <a
           href="mailto:angelosZaros@proton.me"
-          className="!text-green-500 hover:!text-green-300 transition-colors duration-300"
+          className="!text-green-500 hover:!text-green-300 transition-colors duration-300 text-xl"
         >
           Email Me
         </a>
       </div>
       <div className="flex justify-end gap-4 mt-2">
         <span>
-          <FaGithub className="text-xl text-gray-300" />
+          <FaGithub
+            className="text-3xl text-gray-300 hover:text-gray-100 hover:scale-125 transition-colors duration-300 cursor-pointer"
+            onClick={() =>
+              window.open('https://github.com/AngelosZar', '_blank')
+            }
+          />
         </span>
         <span>
-          <FaLinkedin className="text-xl text-gray-300" />
+          <FaLinkedin
+            className="text-3xl text-gray-300 hover:text-gray-100 hover:scale-125 transition-colors duration-300 cursor-pointer"
+            onClick={() =>
+              window.open(
+                'https://www.linkedin.com/in/angelos-zaros-963bb71b0/',
+                '_blank'
+              )
+            }
+          />
         </span>
         <span>
-          <FaDiscord className="text-xl text-gray-300" />
+          <FaDiscord
+            className="text-3xl text-gray-300 hover:text-gray-100 hover:scale-125 transition-colors duration-300 cursor-pointer"
+            onClick={() =>
+              window.open('https://discord.com/channels/@angzar92', '_blank')
+            }
+          />
         </span>
+      </div>
+      <div>
+        <FaArrowCircleUp
+          className="text-3xl text-gray-300 hover:text-gray-100 hover:scale-125
+        transition-colors duration-300 cursor-pointer"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            });
+          }}
+        />
       </div>
     </section>
   );

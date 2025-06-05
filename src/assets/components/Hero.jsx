@@ -13,16 +13,16 @@ function Hero({ scrollToSection }) {
             roots are in front-end development, I'm actively expanding my
             skillset across the full stack
           </p>
-          <p
+          <a
             href="#projects"
-            className="text-green-500 hover:text-green-300 transition-colors duration-300 self-end font-medium "
+            className="!text-green-500 hover:!text-green-300 !no-underline !transition-colors !duration-300 self-end font-medium"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection(e, 'about');
+              scrollToSection(e, 'projects');
             }}
           >
             See my portfolio →
-          </p>
+          </a>
         </div>
       </div>
     </section>

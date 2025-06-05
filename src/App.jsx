@@ -5,6 +5,7 @@ import AboutMe from './assets/components/AboutMe';
 import MyProjects from './assets/components/MyProjects';
 import Header from './layout/Header';
 import Skills from './assets/components/Skills';
+import Contact from './assets/components/Contact';
 function App() {
   const scrollToSection = (e, id) => {
     e.preventDefault();
@@ -22,6 +23,9 @@ function App() {
       <AboutMe />
       <Skills />
       <MyProjects />
+      <Contact />
+      {/* <Footer /> */}
+      {/* <div className="h-24"></div> */}
       {/* </Layout> */}
     </main>
   );

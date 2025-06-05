@@ -1,4 +1,4 @@
-import Header from '../../layout/Header';
+import cvPdf from '../media/Angelos_Zaros_CV.pdf';
 function AboutMe() {
   return (
     <section
@@ -30,6 +30,15 @@ function AboutMe() {
           continuously learning through hands-on projects and modern web
           technologies.
         </p>
+        <a
+          className="!text-green-500 hover:!text-green-300 !no-underline !transition-colors !duration-300 self-end font-medium"
+          // href="./assets/media/Angelos_Zaros_CV.pdf"
+          href={cvPdf}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          See my cv
+        </a>
       </div>
     </section>
   );

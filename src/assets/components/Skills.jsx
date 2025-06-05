@@ -2,7 +2,7 @@ function Skills() {
   return (
     <section
       className="w-full max-w-xl
-     flex flex-col mx-auto flex-grow items-center  bg-bodyDark self-center gap-12"
+     flex flex-col mx-auto flex-grow items-center bg-bodyDark self-center gap-12 min-h-screen"
     >
       <h3 className="text-green-500 py-12">Tech stack </h3>
       <div>

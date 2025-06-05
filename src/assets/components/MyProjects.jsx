@@ -1,6 +1,3 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faGithub } from '@fortawesome/free-brands-svg-icons';
-// import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function MyProjects() {
@@ -11,7 +8,7 @@ function MyProjects() {
     >
       <h2 className="text-green-600">Project</h2>
 
-      <div className="relative flex flex-col md:flex-row gap-8 p-4 text-gray-400 rounded-lg">
+      <div className="relative flex flex-col md:flex-row gap-8 p-4 text-gray-400 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
         <div className="md:w-1/2">
           <img
             src="https://images.unsplash.com/photo-1748679767437-00b5c0327b1a?q=80&w=1427&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -22,8 +19,8 @@ function MyProjects() {
 
         {/* <div className="flex flex-col justify-center md:w-1/2 md:absolute md:right-18 md:top-1/2 md:transform md:-translate-y-1/2 md:pr-4 gap-4 border"> */}
         <div className="flex flex-col justify-center md:w-1/2 gap-4 border">
-          <div className="flex flex-col gap-4">
-            <div className="p-4 rounded-lg">
+          <div className="flex flex-col gap-4 ">
+            <div className="flex flex-col gap-">
               <h4>Auction house</h4>
               <p className="">
                 An auction platform built with native JavaScript as part of the
@@ -35,16 +32,32 @@ function MyProjects() {
               </p>
             </div>
             <div className="flex self-end gap-4 mt-2">
-              <p className="text-gray-200">JS</p>
+              <p className="text-gray-200">HTML</p>
               <p className="text-gray-200">Tailwind</p>
-              <p className="text-gray-200">Html</p>
+              <p className="text-gray-200">Javascript</p>
             </div>
             <div className="flex justify-end gap-4 mt-2">
               <span>
-                <FaGithub className="text-xl text-gray-300" />
+                <FaGithub
+                  className="text-xl text-gray-300 cursor-pointer hover:text-gray-100 transition-colors duration-300 hover:scale-125"
+                  onClick={() =>
+                    window.open(
+                      'https://github.com/AngelosZar/Auction-House-Project',
+                      '_blank'
+                    )
+                  }
+                />
               </span>
               <span>
-                <FaExternalLinkAlt className="text-xl text-gray-300" />
+                <FaExternalLinkAlt
+                  className="text-xl text-gray-300 cursor-pointer hover:text-gray-100 transition-colors duration-300 hover:scale-125"
+                  onClick={() =>
+                    window.open(
+                      'https://angelos-zar-demo-auction-house.vercel.app/',
+                      '_blank'
+                    )
+                  }
+                />
               </span>
             </div>
           </div>

@@ -1,8 +1,15 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 export function ProjectCard({ projects }) {
+  console.log(projects.id);
+  console.log(typeof projects.id);
+
   return (
-    <div className="relative flex flex-col md:flex-row gap-8 p-4 text-gray-400 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+    // <div className="relative flex flex-col md:flex-row gap-8 p-4 text-gray-400 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+
+    <div
+      className={`relative flex flex-col ${projects.id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 p-4 text-gray-400 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out`}
+    >
       <div className="md:w-1/2">
         <img
           src={projects.image}

@@ -1,8 +1,9 @@
 function Skills() {
   return (
     <section
+      id="skills"
       className="w-full max-w-xl
-     flex flex-col mx-auto flex-grow items-center bg-bodyDark self-center gap-12 min-h-screen"
+     flex flex-col mx-auto flex-grow items-center justify-center bg-bodyDark self-center gap-12 min-h-screen"
     >
       <h3 className="text-green-500 py-12">Tech stack </h3>
       <div>
@@ -35,18 +36,6 @@ function Skills() {
           </div>
           <div className="flex justify-center gap-8">
             <img
-              src="https://skillicons.dev/icons?i=redux"
-              className="w-16 h-16"
-            />
-            <img
-              src="https://skillicons.dev/icons?i=express"
-              className="w-16 h-16"
-            />
-            <img
-              src="https://skillicons.dev/icons?i=figma"
-              className="w-16 h-16"
-            />
-            <img
               src="https://skillicons.dev/icons?i=html"
               className="w-16 h-16"
             />
@@ -56,6 +45,18 @@ function Skills() {
             />
             <img
               src="https://skillicons.dev/icons?i=js"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=redux"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=express"
+              className="w-16 h-16"
+            />
+            <img
+              src="https://skillicons.dev/icons?i=figma"
               className="w-16 h-16"
             />
           </div>

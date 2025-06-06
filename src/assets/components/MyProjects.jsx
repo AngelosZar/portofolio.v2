@@ -1,5 +1,6 @@
 import { ProjectCard } from './ProjectCard';
-
+import auctionHouseImg from '../media/auction-house.jpg';
+import hotViewLabsImg from '../media/HotviewLabs-screenshot.jpg';
 function MyProjects() {
   const projects = [
     {
@@ -10,7 +11,7 @@ function MyProjects() {
       image:
         'https://images.unsplash.com/photo-1748679767437-00b5c0327b1a?q=80&w=1427&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       technologies: ['Tailwind', 'React JS'],
-      githubUrl: 'https://github.com/AngelosZar/Auction-House-Project',
+      githubUrl: 'https://github.com/AngelosZar/holidaze',
       liveUrl: 'https://angelos-zar-demo-auction-house.vercel.app/',
     },
     {
@@ -18,8 +19,7 @@ function MyProjects() {
       title: 'Auction house',
       description:
         'An auction platform built with native JavaScript as part of the Noroff School of Technology curriculum. The application features a comprehensive bidding system with complete CRUD operations for auction listings. Built using JavaScript without external frameworks or libraries, demonstrating strong fundamentals in state management, API integration, and user interface design.',
-      image:
-        'https://images.unsplash.com/photo-1748679767437-00b5c0327b1a?q=80&w=1427&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: auctionHouseImg,
       technologies: ['HTML', 'Tailwind', 'Javascript'],
       githubUrl: 'https://github.com/AngelosZar/Auction-House-Project',
       liveUrl: 'https://angelos-zar-demo-auction-house.vercel.app/',
@@ -30,18 +30,17 @@ function MyProjects() {
       title: 'HotView Labs',
       description:
         'HotView Labs is a responsive web application built with vanilla JavaScript, HTML, and CSS. The platform features six pages divided between public and administrative access. Public users can access the Homepage, Single Blog View, Login, and About Us pages, while authenticated administrators have exclusive access to Blog Edit and User Registration functionalities.',
-      image:
-        'https://images.unsplash.com/photo-1748679767437-00b5c0327b1a?q=80&w=1427&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: hotViewLabsImg,
       technologies: ['HTML', 'CSS', 'Javascript'],
-      githubUrl: 'https://github.com/AngelosZar/Auction-House-Project',
-      liveUrl: 'https://angelos-zar-demo-auction-house.vercel.app/',
+      githubUrl: 'https://github.com/NoroffFEU/FED1-PE1-AngelosZar',
+      liveUrl: 'https://hot-view-labs.netlify.app/index.html',
     },
   ];
 
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center min-h-screen gap-12 w-full max-w-6xl mx-auto p-8 self-center"
+      className="flex flex-col items-center justify-center min-h-screen gap-22 w-full max-w-6xl mx-auto p-8 self-center"
     >
       <h2 className="text-green-600">Project</h2>
       {/* <ProjectCard /> */}

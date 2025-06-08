@@ -42,7 +42,7 @@ function MyProjects() {
       id="projects"
       className="flex flex-col items-center justify-center min-h-screen gap-22 w-full max-w-6xl mx-auto p-8 self-center"
     >
-      <h2 className="text-green-600">Project</h2>
+      <h2 className="text-green-600">Projects</h2>
       {projects.map((project) => (
         <ProjectCard key={project.id} projects={project} />
       ))}

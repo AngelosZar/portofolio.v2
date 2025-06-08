@@ -5,10 +5,8 @@ export function ProjectCard({ projects }) {
   console.log(typeof projects.id);
 
   return (
-    // <div className="relative flex flex-col md:flex-row gap-8 p-4 text-gray-400 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-
     <div
-      className={`relative flex flex-col ${projects.id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 p-4 text-gray-400 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out`}
+      className={`relative flex flex-col ${projects.id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 p-4 px-8 text-gray-400 rounded-lg hover:scale-105 transition-transform duration-300 ease-in-out`}
     >
       <div className="md:w-1/2">
         <img
@@ -18,7 +16,6 @@ export function ProjectCard({ projects }) {
         />
       </div>
 
-      {/* <div className="flex flex-col justify-center md:w-1/2 md:absolute md:right-18 md:top-1/2 md:transform md:-translate-y-1/2 md:pr-4 gap-4 border"> */}
       <div className="flex flex-col justify-center md:w-1/2 gap-4 border">
         <div className="flex flex-col gap-4 ">
           <div className="flex flex-col gap-">

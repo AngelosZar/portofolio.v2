@@ -1,4 +1,5 @@
 import cvPdf from '../media/Angelos_Zaros_CV.pdf';
+import profileImg from '../media/profile.jpg';
 function AboutMe() {
   return (
     <section
@@ -8,8 +9,8 @@ function AboutMe() {
       <div className="mb-8">
         <div className="w-[250px] h-[250px] relative">
           <img
-            src="https://images.unsplash.com/photo-1476348644449-f68b865b98e4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
+            src={profileImg}
+            alt="profile img"
             className="w-full h-full object-cover shadow-lg rounded-full aspect-square"
           />
         </div>
@@ -32,7 +33,6 @@ function AboutMe() {
         </p>
         <a
           className="!text-green-500 hover:!text-green-300 !no-underline !transition-colors !duration-300 self-end font-medium"
-          // href="./assets/media/Angelos_Zaros_CV.pdf"
           href={cvPdf}
           target="_blank"
           rel="noopener noreferrer"

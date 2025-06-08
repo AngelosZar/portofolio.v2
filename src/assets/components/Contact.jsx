@@ -1,9 +1,7 @@
 import {
   FaGithub,
-  FaExternalLinkAlt,
   FaLinkedin,
   FaDiscord,
-  FaArrowUp,
   FaArrowCircleUp,
 } from 'react-icons/fa';
 

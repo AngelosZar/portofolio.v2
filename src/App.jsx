@@ -6,6 +6,7 @@ import MyProjects from './assets/components/MyProjects';
 import Header from './layout/Header';
 import Skills from './assets/components/Skills';
 import Contact from './assets/components/Contact';
+import OtherProjects from './assets/components/OtherProjects';
 function App() {
   const scrollToSection = (e, id) => {
     e.preventDefault();
@@ -15,7 +16,7 @@ function App() {
     }
   };
   return (
-    <main className="w-full max-w-[1920px] flex flex-col mx-auto flex-grow min-h-screen bg-bodyDark">
+    <main className="w-full max-w-[1920px] flex flex-col mx-auto flex-grow min-h-screen bg-bodyDark ">
       {/* <Layout> */}
       <Header />
       <Hero scrollToSection={scrollToSection} />
@@ -23,6 +24,7 @@ function App() {
       <AboutMe />
       <Skills />
       <MyProjects />
+      <OtherProjects />
       <Contact />
       {/* <Footer /> */}
       {/* <div className="h-24"></div> */}

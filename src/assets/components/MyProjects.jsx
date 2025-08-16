@@ -12,7 +12,7 @@ function MyProjects() {
       image: holidazeImg,
       technologies: ['Tailwind', 'React JS', 'Zustand'],
       githubUrl: 'https://github.com/AngelosZar/holidaze',
-      liveUrl: 'https://angelos-zar-demo-auction-house.vercel.app/',
+      liveUrl: 'https://holidaze-pearl.vercel.app/',
     },
     {
       id: 2,

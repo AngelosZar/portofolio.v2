@@ -32,7 +32,7 @@ export function ProjectCard({ projects }) {
                 className="text-xl text-gray-300 cursor-pointer hover:text-gray-100 transition-colors duration-300 hover:scale-125"
                 onClick={() =>
                   window.open(
-                    'https://github.com/AngelosZar/Auction-House-Project',
+                    projects.githubUrl,
                     '_blank'
                   )
                 }
@@ -43,7 +43,7 @@ export function ProjectCard({ projects }) {
                 className="text-xl text-gray-300 cursor-pointer hover:text-gray-100 transition-colors duration-300 hover:scale-125"
                 onClick={() =>
                   window.open(
-                    'https://angelos-zar-demo-auction-house.vercel.app/',
+                    projects.liveUrl,
                     '_blank'
                   )
                 }
